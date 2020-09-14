@@ -1,13 +1,21 @@
-<header class="navbar navbar-fixed-top navbar-dark bg-dark">
+<header class="navbar navbar-fixed-top navbar-dark navbar-expand-lg bg-dark">
   <div class="container">
     <%= link_to image_tag('reflectotron_banner.svg', alt: 'reflectotron',
                           height: '60', id: 'logo'), root_url %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to 'home',   root_path %></li>
-        <li><%= link_to 'help',   help_path %></li>
-        <li><%= link_to 'about',  about_path %></li>
-        <li><%= link_to 'log in', '#' %></li>
+        <li class='nav-item'>
+          <%= link_to 'home',   root_path, class: 'nav-link' %>
+        </li>
+        <li class='nav-item'>
+          <%= link_to 'help',   help_path, class: 'nav-link' %>
+        </li>
+        <li class='nav-item'>
+          <%= link_to 'about',  about_path, class: 'nav-link' %>
+        </li>
+        <li class='nav-item'>
+          <%= link_to 'log in', '#', class: 'nav-link' %>
+        </li>
       </ul>
     </nav>
   </div>
