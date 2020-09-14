@@ -1,24 +1,16 @@
-# README
+reflectotron
+===
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+a self-reflecting daily journalling app which repeats back goals on a timer.
 
-Things you may want to cover:
 
-* Ruby version
+## dependencies
+* ruby 2.7
+* rails 6.0
+* uses postgresql (pg gem) for dev and prod
 
-* System dependencies
+## deployment
+using js webpack, your dev environment requires two commands to run: `rails server` and `webpack-dev-server`. use overmind with the included Procfile.dev file.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## testing
+`bundle exec guard` with the included `Guardfile` should hook into system notifications
