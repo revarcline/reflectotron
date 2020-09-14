@@ -1,0 +1,14 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to image_tag('reflectotron_banner.svg', alt: 'reflectotron',
+                          height: '60', id: 'logo'), root_url %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'home',   root_path %></li>
+        <li><%= link_to 'help',   help_path %></li>
+        <li><%= link_to 'about',  about_path %></li>
+        <li><%= link_to 'log in', '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
