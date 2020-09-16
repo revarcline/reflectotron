@@ -5,6 +5,7 @@ ruby '2.7.1'
 
 gem 'bcrypt', '~> 3.1.7' # Use Active Model has_secure_password
 gem 'bootsnap', '>= 1.4.2', require: false # Reduces boot times: config/boot.rb
+gem 'devise', '~> 4.7.2' # authentication time
 gem 'figaro', '~> 1.2' # hide api keys and other passwords
 gem 'jbuilder', '~> 2.7' # Build JSON APIs with ease.
 gem 'pg', '>= 0.18', '< 2.0' # Use postgresql as the database for Active Record
