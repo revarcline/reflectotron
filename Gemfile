@@ -8,6 +8,7 @@ gem 'bootsnap', '>= 1.4.2', require: false # Reduces boot times: config/boot.rb
 gem 'devise', '~> 4.7.2' # authentication time
 gem 'figaro', '~> 1.2' # hide api keys and other passwords
 gem 'jbuilder', '~> 2.7' # Build JSON APIs with ease.
+gem 'omniauth', '~> 1.9.1'
 gem 'pg', '>= 0.18', '< 2.0' # Use postgresql as the database for Active Record
 gem 'puma', '~> 4.1' # Use Puma as the app server
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
