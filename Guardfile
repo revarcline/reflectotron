@@ -24,9 +24,9 @@ guard :minitest, spring: 'bin/rails test', all_on_start: true do
   watch(%r{^app/models/(.*?)\.rb$}) do |matches|
     "test/models/#{matches[1]}_test.rb"
   end
-  watch(%r{^test/fixtures/(.*?)\.yml$}) do |matches|
-    "test/models/#{matches[1].singularize}_test.rb"
-  end
+  # watch(%r{^test/fixtures/(.*?)\.yml$}) do |matches|
+  # "test/models/#{matches[1].singularize}_test.rb"
+  # end
   watch(%r{^app/mailers/(.*?)\.rb$}) do |matches|
     "test/mailers/#{matches[1]}_test.rb"
   end
@@ -38,7 +38,7 @@ guard :minitest, spring: 'bin/rails test', all_on_start: true do
   end
   watch(%r{^app/views/([^/]*?)/.*\.html\.erb$}) do |matches|
     ["test/controllers/#{matches[1]}_controller_test.rb"] +
-    integration_tests(matches[1])
+      integration_tests(matches[1])
   end
   watch(%r{^app/helpers/(.*?)_helper\.rb$}) do |matches|
     integration_tests(matches[1])
@@ -51,7 +51,7 @@ end
 # Returns the integration tests corresponding to the given resource.
 def integration_tests(resource = :all)
   if resource == :all
-    Dir["test/integration/*"]
+    Dir['test/integration/*']
   else
     Dir["test/integration/#{resource}_*.rb"]
   end
@@ -59,7 +59,7 @@ end
 
 # Returns all tests that hit the interface.
 def interface_tests
-  integration_tests << "test/controllers"
+  integration_tests << 'test/controllers'
 end
 
 # Returns the controller tests corresponding to the given resource.
