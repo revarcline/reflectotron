@@ -23,7 +23,7 @@ default: &default
 
 local: &local
   username: pguser
-  password: <%= ENV.fetch('pg_user_password') %>
+  password: <%= ENV.fetch('PG_USER_PASSWORD') %>
   host: localhost
 
 development:
