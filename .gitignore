@@ -30,9 +30,13 @@
 /config/application.yml
 /config/initializers/secret_token.rb
 
+# js crap
 /public/packs
 /public/packs-test
 /node_modules
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# ignore repl scratch file
+repl.rb
