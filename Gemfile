@@ -16,6 +16,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'sass-rails', '>= 6' # Use SCSS for stylesheets
 gem 'turbolinks', '~> 5' # Turbolinks makes navigating application faster
 gem 'webpacker', '~> 4.0' # Transpile app-like JavaScript.
+gem 'bootstrap_form', '>= 4.5'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw] # debugger console
