@@ -9,7 +9,6 @@ require("@rails/activestorage").start()
 require("channels")
 require("bootstrap")
 require("jquery")
-require("jquery_ujs")
 
 // stylesheets
 require("../stylesheets/main.scss")
