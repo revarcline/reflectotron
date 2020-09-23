@@ -1,9 +1,25 @@
-<header class="navbar navbar-fixed-top navbar-dark navbar-expand-lg bg-dark">
-  <div class="container">
-    <%= link_to image_pack_tag('reflectotron_banner.svg',
+<header class="navbar navbar-dark navbar-default bg-dark">
+  <div class="container-fluid">
+    <!-- brand and toggle button -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-top"
+                            aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand">
+        <%= link_to image_pack_tag('reflectotron_banner.svg',
                           alt: 'reflectotron',
-                          height: '60', id: 'logo'), root_path %>
-    <nav>
+                          height: '60', id: 'logo'),
+                          root_path %>
+      </div>
+    </div>
+    <!-- menu items, forms, other togglables -->
+    <div class="collapse navbar-collapse" id="collapse-top">
       <ul class="nav navbar-nav navbar-right">
         <li class='nav-item'>
           <%= link_to 'home',   root_path, class: 'nav-link' %>
@@ -15,6 +31,6 @@
           <%= link_to 'log in', sign_in_path, class: 'nav-link' %>
         </li>
       </ul>
-    </nav>
-  </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </header>
